@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardapio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="top">
+    <div class="logo">
+      <a href="index.html"><img src="./Imagens/logo3.png" alt=""></a>
+      <h1>PIZZARIA OUR TASTE</h1>
+    </div>
+    <nav aria-label="Navegacao-principal">
+      <ul>
+        <li class="menu-item"><a href="cardapio.html">Cardapio</a></li>
+        <li class="menu-item"><a href="detalhes.html">Detalhes</a></li>
+        <li class="menu-item"><a href="sobre-nos.html">Sobre nós</a></li>
+        <li> <a href="carrinho.html" class="link-carrinho"> <span class="cart-count">0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero hero-compacto">
+
+      <img src="./Imagens/pizza-5163800_1280.jpg" alt="Pizza artesanal">
+
+      <div class="overlay"></div>
+
+      <div class="conteudo">
+        <h2>O verdadeiro sabor da pizza
+          <span>artesanal.</span>
+        </h2>
+        <p>Ingredientes selecionados, massa artesanal e muito amor em cada fatia.</p>
+
+      </div>
+
+    </section>
+    <section class="destaques">
+      <h2 class="titulo">
+        <span>Cardapio</span>
+      </h2>
+      <p id="aviso-detalhes" class="aviso-api" role="status">Consultando os detalhes...</p>
+      <div id="lista-detalhes" class="detalhe-grid" aria-live="polite">
+        <p class="estado-carregamento">Carregando detalhes das pizzas...</p>
+      </div>
+    </section>
+
+    <section class="beneficios">
+
+      <div class="beneficio">
+        <div class="icone">🍃</div>
+
+        <div>
+          <h3>Ingredientes Frescos</h3>
+          <p>Selecionamos os melhores Ingredientes</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="icone">🔥</div>
+
+        <div>
+          <h3>Forno à Lenha</h3>
+          <p>Sabor especial do forno artesanal.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="icone">🛵</div>
+
+        <div>
+          <h3>Entrega Rápida</h3>
+          <p>Sua pizza quentinha até você.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="catalago.js"></script>
+  <script src="cardapio.js"></script>
+</body>
+
+</html>

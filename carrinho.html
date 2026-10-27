@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header class="top">
+    <div class="logo"> <a href="index.html"><img src="./Imagens/logo3.png" alt="logo da pizzaria Our Taste"></a><h1>PIZZARIA OUR TASTE</h1></div>
+  <nav aria-label="Navegação principal">
+    <ul>
+        <li><a href="cardapio.html">Cardápio</a></li>
+        <li><a href="detalhes.html">Detalhes</a></li>
+        <li><a href="sobre-nos.html">Sobre nós</a></li>
+        <li><a class="link-carrinho" href="carrinho.html">Carrinho <span class="cart-count" hidden>0</span></a>
+        </li></ul></nav>
+  </header>
+  <main class="pagina-carrinho">
+    <section class="cabecalho-carrinho">
+        <span class="categoria">SEU PEDIDO</span>
+        <h2>Meu <span>carrinho</span></h2>
+        <p>Confira as pizzas, informe a entrega e escolha a forma de pagamento.</p>
+    </section>
+    <div id="carrinho-vazio" class="carrinho-vazio" hidden>
+        <h3>Seu carrinho ainda está vazio.</h3>
+        <p>Escolha uma pizza no cardápio para começar.</p>
+        <a class="botao" href="cardapio.html">VER CARDÁPIO</a></div>
+    <div class="layout-carrinho">
+      <section class="painel-carrinho">
+        <div class="linha-titulo">
+            <h2>Pizzas selecionadas</h2>
+            <button type="button" id="limpar-carrinho" class="botao-secundario" hidden>Limpar carrinho</button>
+        </div>
+
+        <div id="itens-carrinho"></div>
+
+        <section id="resumo-carrinho" class="resumo-carrinho" hidden>
+            <h2>Resumo do pedido</h2>
+            <div class="linha-resumo">
+                <span>Subtotal</span>
+                <strong id="subtotal">R$ 0,00</strong>
+            </div>
+            <div class="linha-resumo">
+                <span>Taxa de entrega (demonstrativa)</span>
+                <strong id="taxa-entrega">R$ 5,00</strong>
+            </div>
+            <div class="linha-resumo linha-total"><span>Total</span>
+                <strong id="total">R$ 0,00</strong></div></section>
+      </section>
+      <section class="painel-entrega">
+        <h2>Entrega e pagamento</h2>
+        <div class="previsao-card">
+            <h3>Previsão estimada</h3>
+            <p><span>Preparo:</span> <strong id="prazo-preparo">25–35 minutos</strong>
+            </p>
+            <p><span>Entrega:</span> <strong id="prazo-entrega">15–25 minutos após o preparo</strong>
+            </p>
+            <p><span>Chegada prevista:</span> <strong id="previsao-chegada">Calculando...</strong>
+            </p>
+            <small>Prazo ilustrativo; pode variar conforme distância, trânsito e demanda.</small>
+        </div>
+        <form id="form-finalizar" class="form-entrega" hidden>
+          <label>Nome completo<input name="cliente" type="text" autocomplete="name" required placeholder="Seu nome">
+        </label>
+          <label>Telefone<input name="telefone" type="tel" autocomplete="tel" required placeholder="(00) 00000-0000">
+        </label>
+          <label>Rua e endereço<input name="endereco" type="text" autocomplete="street-address" required placeholder="Rua, avenida ou estrada">
+        </label>
+          <div class="duas-colunas">
+            <label>Número<input name="numero" type="text" required placeholder="Nº"></label>
+            <label>CEP<input name="cep" type="text" autocomplete="postal-code" placeholder="00000-000">
+            </label>
+        </div>
+          <label>Bairro<input name="bairro" type="text" required placeholder="Seu bairro">
+        </label>
+          <label>Cidade<input name="cidade" type="text" required placeholder="Sua cidade">
+        </label>
+          <label>Complemento (opcional)<input name="complemento" type="text" placeholder="Casa, referência etc.">
+        </label>
+          <label>Forma de pagamento<select id="pagamento" name="pagamento" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="pix">Pix na confirmação</option>
+            <option value="cartao">Cartão na entrega</option>
+            <option value="dinheiro">Dinheiro na entrega</option>
+        </select>
+    </label>
+          <div id="troco-grupo" hidden>
+            <label>Troco para quanto? (opcional)<input name="troco" type="number" min="0" step="0.01" placeholder="Ex.: 100,00">
+            </label>
+        </div>
+          <button class="botao botao-finalizar" type="submit">SIMULAR PEDIDO</button>
+          <p class="aviso-privacidade">Demonstração escolar: os dados ficam somente neste navegador e não são enviados à pizzaria.</p>
+        </form>
+        <div id="status-pedido" class="status-pedido" role="status" hidden></div>
+      </section>
+    </div>
+  </main>
+  <footer class="rodape"><p>© Pizzaria Our Taste — sabores feitos com carinho.</p></footer>
+    <script src="catalago.js"></script>
+    <script src="detalhes.js"></script>
+</body>
+</html>
