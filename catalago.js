@@ -76,7 +76,7 @@ window.Pizzaria = (() => {
   function extrairLista(payload) {
     if (Array.isArray(payload)) return payload
     if (!payload || typeof payload !== "object") return [];
-    for (const chave of ["produtos", "data", "resultados", "results", "items", "content"]) {
+    for (const chave of ["produtos", "pizzas", "data", "resultados", "results", "items", "content"]) {
       if (Array.isArray(payload[chave])) return payload[chave]
     }
     if (payload.produto || payload.nome || payload.id || payload._id) return [payload]

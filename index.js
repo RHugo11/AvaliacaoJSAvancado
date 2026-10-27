@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const minutos = Math.floor((restante % ((1000* 60* 60)) / (1000 *60)))
         const segundos = Math.floor((restante % (1000* 60)) / 1000)
         contador.textContent = [horas, minutos, segundos]
-        .map(valor => String(valor).pedStart(2, "0"))
+        .map(valor => String(valor).padStart(2, "0"))
         .join(":")
         if (restante === 0) clearInterval(intervalo)
     }

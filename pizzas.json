@@ -1,1 +1,53 @@
-{"pizzas": []}
+{
+  "pizzas": [
+    {
+      "nome": "Pizza Calabresa Supreme",
+      "restaurante": "Pizzaria Our Taste",
+      "imagem": "./Imagens/pepperoni-pizza-closeup.jpg",
+      "produto": "Calabresa Supreme",
+      "descricao": "Molho artesanal, queijo especial, calabresa defumada e cebola roxa.",
+      "id": "td2cKM7zgdE"
+    },
+    {
+      "nome": "Pizza Frango Catupiry",
+      "restaurante": "Pizzaria Our Taste",
+      "imagem": "./Imagens/frango catupiry.jpg",
+      "produto": "Frango Catupiry",
+      "descricao": "Frango temperado, catupiry cremoso e cobertura gratinada.",
+      "id": "8coFbmt3bUc"
+    },
+    {
+      "nome": "Pizza Portuguesa Especial",
+      "restaurante": "Pizzaria Our Taste",
+      "imagem": "./Imagens/Pizza-Portuguesa.jpg",
+      "produto": "Portuguesa Especial",
+      "descricao": "Presunto, ovos, cebola, azeitona e muito queijo.",
+      "id": "B0MlLhiu0Ok"
+    },
+    {
+      "nome": "Pizza Bacon com Mussarela",
+      "restaurante": "Pizzaria Our Taste",
+      "imagem": "./Imagens/pizza bacon.avif",
+      "produto": "Bacon com Mussarela",
+      "descricao": "Molho artesanal, queijo mussarela e bacon crocante.",
+      "id": "A6DCX9sTfzA"
+    },
+    {
+      "nome": "Pizza 4 Queijos",
+      "restaurante": "Pizzaria Our Taste",
+      "imagem": "./Imagens/pizza-quatro-queijos-comitc3aa-umami.webp",
+      "produto": "4 Queijos",
+      "descricao": "Queijo mussarela, queijo prato, queijo minas e queijo gorgonzola.",
+      "id": "E3_wflACGcM"
+    },
+    {
+      "nome": "Pizza de Camarão",
+      "restaurante": "Pizzaria Our Taste",
+      "imagem": "./Imagens/pizza camarao.jpg",
+      "produto": "Camarão",
+      "descricao": "Molho especial, camarão, frango e catupiry.",
+      "id": "IC4NbCTVSN4"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         const { produtos, origem } = await Pizzaria.carregarCatalogo()
         container.innerHTML = ""
         
-        produtos.forEach (Produtio => {
+        produtos.forEach (Produto => {
             const nome = Pizzaria.getNomeProduto(produto)
       const descricao = produto.descricao || "Pizza artesanal preparada com ingredientes selecionados."
       const imagem = produto.imagem || "./Imagens/pizza-5163800_1280.jpg"
